@@ -18,8 +18,7 @@ contract AptosBalanceChecker {
             updateBalance(accounts[i], balance);
             if (balance > 10 ether) {
                 wealthyAccounts.push(accounts[i]);
-            } else {
-                poorAccounts.push(accounts[i]);
+        
             }
         }
     }
