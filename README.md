@@ -15,11 +15,5 @@ contract AptosBalanceChecker {
        function checkAndDivideBalances(address[] memory accounts) external {
         for (uint i = 0; i < accounts.length; i++) {
             uint256 balance = accounts[i].balance;
-            updateBalance(accounts[i], balance);
-            if (balance > 10 ether) {
-                wealthyAccounts.push(accounts[i]);
-        
-            }
-        }
-    }
+            updateBalance(accounts[i], balan
 
