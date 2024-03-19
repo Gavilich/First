@@ -7,8 +7,7 @@ contract AptosBalanceChecker {
 
       event BalanceUpdated(address account, uint256 balance);
 
-       function updateBalance(address account, uint256 balance) internal {
-        balances[account] = balance;
+               balances[account] = balance;
         emit BalanceUpdated(account, balance);
     }
 
